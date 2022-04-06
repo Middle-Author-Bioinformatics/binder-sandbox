@@ -1,1 +1,1 @@
-Jupyter Binder for SprayNPray tutorial
+## Jupyter Binder for SprayNPray tutorial

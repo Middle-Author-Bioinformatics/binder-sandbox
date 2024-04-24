@@ -2,9 +2,7 @@ name: variant-calling
 channels:
   - conda-forge
   - bioconda
-  - au-eoed
   - defaults
 dependencies:
   - python =3.9
-  - pip
   - breseq

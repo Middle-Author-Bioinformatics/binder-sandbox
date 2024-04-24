@@ -1,4 +1,4 @@
-name: env-name-here-does-not-matter
+name: variant-calling
 channels:
   - conda-forge
   - bioconda
@@ -7,19 +7,4 @@ channels:
 dependencies:
   - python =3.9
   - pip
-  - diamond =0.9.30
-  - blast =2.9.0
-  - hmmer =3.2.1
-  - prodigal =2.6.3
-  - r
-  - r-tm
-  - r-snowballc
-  - r-rcolorbrewer
-  - r-xml
-  - r-argparse
-  - biopython
   - breseq
-  - numpy
-  - matplotlib
-  - scikit-learn
-  - joblib

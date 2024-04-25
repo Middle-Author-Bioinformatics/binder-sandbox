@@ -1,0 +1,747 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_1.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">77,715</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GG</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+108/&#8209;428)</td>
+<td align="center"><i>IT766_RS00445</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS00450</i></td>
+<td align="left">phosphoadenylyl&#8209;sulfate reductase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">77,743</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+136/&#8209;401)</td>
+<td align="center"><i>IT766_RS00445</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS00450</i></td>
+<td align="left">phosphoadenylyl&#8209;sulfate reductase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">77,762</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+155/&#8209;382)</td>
+<td align="center"><i>IT766_RS00445</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS00450</i></td>
+<td align="left">phosphoadenylyl&#8209;sulfate reductase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">77,770</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+163/&#8209;374)</td>
+<td align="center"><i>IT766_RS00445</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS00450</i></td>
+<td align="left">phosphoadenylyl&#8209;sulfate reductase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">77,784</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+177/&#8209;360)</td>
+<td align="center"><i>IT766_RS00445</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS00450</i></td>
+<td align="left">phosphoadenylyl&#8209;sulfate reductase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_6.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">96,480</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;219/&#8209;244)</td>
+<td align="center"><i>lysC</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS00525</i></td>
+<td align="left">lysine&#8209;sensitive aspartokinase 3/alanine&#8209;&#8209;glyoxylate aminotransferase family protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_7.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">169,398</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(361/1175&nbsp;nt)</td>
+<td align="center"><i>hemW</i>&nbsp;&larr;</td>
+<td align="left">radical SAM family heme chaperone HemW</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_8.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">200,935</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1418/1832&nbsp;nt)</td>
+<td align="center"><i>glmS</i>&nbsp;&rarr;</td>
+<td align="left">glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate transaminase (isomerizing)</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_9.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">284,004</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(512/1103&nbsp;nt)</td>
+<td align="center"><i>zapE</i>&nbsp;&rarr;</td>
+<td align="left">cell division protein ZapE</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_10.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">313,492</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(393/2291&nbsp;nt)</td>
+<td align="center"><i>IT766_RS01600</i>&nbsp;&rarr;</td>
+<td align="left">patatin&#8209;like phospholipase family protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_11.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">323,646</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(229/1031&nbsp;nt)</td>
+<td align="center"><i>IT766_RS01635</i>&nbsp;&rarr;</td>
+<td align="left">ABC transporter ATP&#8209;binding protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_12.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">380,872</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(302/2054&nbsp;nt)</td>
+<td align="center"><i>IT766_RS01850</i>&nbsp;&larr;</td>
+<td align="left">EAL domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_13.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">591,816</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(3671/4562&nbsp;nt)</td>
+<td align="center"><i>acfD</i>&nbsp;&rarr;</td>
+<td align="left">accessory colonization factor AcfD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_14.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">606,108</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(77/512&nbsp;nt)</td>
+<td align="center"><i>IT766_RS02820</i>&nbsp;&rarr;</td>
+<td align="left">Tfp pilus assembly protein FimT/FimU</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_15.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">681,804</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(797/1397&nbsp;nt)</td>
+<td align="center"><i>vpsL</i>&nbsp;&rarr;</td>
+<td align="left">exopolysaccharide biosynthesis glycosyltransferase VpsL</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_16.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">806,389</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1944/2078&nbsp;nt)</td>
+<td align="center"><i>dnaX</i>&nbsp;&rarr;</td>
+<td align="left">DNA polymerase III subunit gamma/tau</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_17.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">942,007</td><!-- Position -->
+<td align="center">(G)<sub>8&rarr;9</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1062/1331&nbsp;nt)</td>
+<td align="center"><i>IT766_RS04350</i>&nbsp;&rarr;</td>
+<td align="left">GGDEF domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_18.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">974,288</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1314/1832&nbsp;nt)</td>
+<td align="center"><i>uvrC</i>&nbsp;&rarr;</td>
+<td align="left">excinuclease ABC subunit UvrC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_19.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">1,288,841</td><!-- Position -->
+<td align="center">(A)<sub>8&rarr;9</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;550/&#8209;308)</td>
+<td align="center"><i>IT766_RS05790</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS05795</i></td>
+<td align="left">MarR family winged helix&#8209;turn&#8209;helix transcriptional regulator/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_20.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">1,294,651</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(5318/5400&nbsp;nt)</td>
+<td align="center"><i>IT766_RS05830</i>&nbsp;&larr;</td>
+<td align="left">fibronectin type III domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_21.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">1,453,812</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(282/974&nbsp;nt)</td>
+<td align="center"><i>IT766_RS06610</i>&nbsp;&rarr;</td>
+<td align="left">efflux RND transporter periplasmic adaptor subunit</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_136.html">MC</a>&nbsp;<a href="evidence/JC_138.html">JC</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">1,631,398</td><!-- Position -->
+<td align="center">&Delta;16,764&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[IT766_RS07320]</i>&#8211;<i>[IT766_RS07370]</i></td>
+<td align="left"><i>[IT766_RS07320]</i>, <i>[IT766_RS07325]</i>, <i>IT766_RS07330</i>, <i>zorA</i>, <i>IT766_RS07340</i>, <i>IT766_RS07345</i>, <i>IT766_RS07350</i>, <i>IT766_RS07355</i>, <i>IT766_RS07360</i>, <i>IT766_RS07365</i>, <i>[IT766_RS07370]</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_23.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">1,808,167</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(669/1340&nbsp;nt)</td>
+<td align="center"><i>IT766_RS08105</i>&nbsp;&rarr;</td>
+<td align="left">sigma&#8209;54 dependent transcriptional regulator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_24.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">1,910,643</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(151/947&nbsp;nt)</td>
+<td align="center"><i>rluC</i>&nbsp;&larr;</td>
+<td align="left">23S rRNA pseudouridine(955/2504/2580) synthase RluC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_25.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,006,640</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(348/782&nbsp;nt)</td>
+<td align="center"><i>fliR</i>&nbsp;&larr;</td>
+<td align="left">flagellar biosynthetic protein FliR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_26.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,094,497</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;449/&#8209;162)</td>
+<td align="center"><i>IT766_RS09505</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS09510</i></td>
+<td align="left">TonB&#8209;dependent siderophore receptor/Fe3+&#8209;citrate ABC transporter substrate&#8209;binding protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_27.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,098,998</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(859/2720&nbsp;nt)</td>
+<td align="center"><i>copA</i>&nbsp;&rarr;</td>
+<td align="left">copper&#8209;translocating P&#8209;type ATPase CopA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_28.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,124,021</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(459/524&nbsp;nt)</td>
+<td align="center"><i>IT766_RS09640</i>&nbsp;&larr;</td>
+<td align="left">phenolic acid decarboxylase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_29.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,283,312</td><!-- Position -->
+<td align="center">(C)<sub>9&rarr;10</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+486/&#8209;124)</td>
+<td align="center"><i>IT766_RS10305</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS10310</i></td>
+<td align="left">retron system putative HNH endonuclease/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_30.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,284,538</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(2700/3230&nbsp;nt)</td>
+<td align="center"><i>carB</i>&nbsp;&larr;</td>
+<td align="left">carbamoyl&#8209;phosphate synthase large subunit</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_31.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,311,191</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;8</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;115/+61)</td>
+<td align="center"><i>rnpB</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>lpdA</i></td>
+<td align="left">RNase P RNA component class A/dihydrolipoyl dehydrogenase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_32.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,394,909</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1021/1805&nbsp;nt)</td>
+<td align="center"><i>IT766_RS10775</i>&nbsp;&larr;</td>
+<td align="left">long&#8209;chain fatty acid&#8209;&#8209;CoA ligase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_33.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,541,813</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(42/254&nbsp;nt)</td>
+<td align="center"><i>IT766_RS11540</i>&nbsp;&rarr;</td>
+<td align="left">DUF3624 domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_34.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,606,682</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;276/&#8209;102)</td>
+<td align="center"><i>IT766_RS11825</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>IT766_RS11830</i></td>
+<td align="left">potassium/proton antiporter/DUF4212 domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_35.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,629,739</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(585/1010&nbsp;nt)</td>
+<td align="center"><i>gspK</i>&nbsp;&larr;</td>
+<td align="left">type II secretion system minor pseudopilin GspK</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_36.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,661,355</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;3/+3)</td>
+<td align="center"><i>IT766_RS12080</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>IT766_RS12085</i></td>
+<td align="left">tRNA&#8209;Ala/tRNA&#8209;Val</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_37.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,892,942</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;22/+190)</td>
+<td align="center"><i>ggt</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>rarD</i></td>
+<td align="left">gamma&#8209;glutamyltransferase/EamA family transporter RarD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_38.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,910,935</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+260/&#8209;105)</td>
+<td align="center"><i>rph</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>pyrE</i></td>
+<td align="left">ribonuclease PH/orotate phosphoribosyltransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_39.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064350</td><!-- Seq_Id -->
+<td align="right">2,926,584</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(387/929&nbsp;nt)</td>
+<td align="center"><i>IT766_RS13375</i>&nbsp;&larr;</td>
+<td align="left">WavE lipopolysaccharide synthesis family protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_40.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">151,842</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(855/1100&nbsp;nt)</td>
+<td align="center"><i>IT766_RS14335</i>&nbsp;&larr;</td>
+<td align="left">GGDEF domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_41.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">160,919</td><!-- Position -->
+<td align="center">(C)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(66/1823&nbsp;nt)</td>
+<td align="center"><i>IT766_RS14365</i>&nbsp;&larr;</td>
+<td align="left">GGDEF domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_42.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">284,640</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(235/1916&nbsp;nt)</td>
+<td align="center"><i>IT766_RS14895</i>&nbsp;&rarr;</td>
+<td align="left">DUF262 domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_43.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">294,313</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(140/1541&nbsp;nt)</td>
+<td align="center"><i>IT766_RS14940</i>&nbsp;&rarr;</td>
+<td align="left">DUF3369 domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_44.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">318,509</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(135/937&nbsp;nt)</td>
+<td align="center"><i>vctD</i>&nbsp;&rarr;</td>
+<td align="left">iron chelate uptake ABC transporter permease subunit VctD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_45.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">318,889</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(515/937&nbsp;nt)</td>
+<td align="center"><i>vctD</i>&nbsp;&rarr;</td>
+<td align="left">iron chelate uptake ABC transporter permease subunit VctD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_46.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">522,615</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1181/2060&nbsp;nt)</td>
+<td align="center"><i>cqsS</i>&nbsp;&rarr;</td>
+<td align="left">quorum&#8209;sensing CAI&#8209;1 autoinducer sensor kinase/phosphatase CqsS</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_47.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">526,550</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(1054/1406&nbsp;nt)</td>
+<td align="center"><i>clcA</i>&nbsp;&larr;</td>
+<td align="left">H(+)/Cl(&#8209;) exchange transporter ClcA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_48.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">581,871</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(214/2081&nbsp;nt)</td>
+<td align="center"><i>IT766_RS16725</i>&nbsp;&rarr;</td>
+<td align="left">TonB&#8209;dependent hemoglobin/transferrin/lactoferrin family receptor</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_49.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">725,968</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(163/536&nbsp;nt)</td>
+<td align="center"><i>IT766_RS17350</i>&nbsp;&rarr;</td>
+<td align="left">cytochrome b/b6 domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_50.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">886,123</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+66/+129)</td>
+<td align="center"><i>IT766_RS18020</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>ompW</i></td>
+<td align="left">hypothetical protein/outer membrane protein OmpW</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_51.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_CP064351</td><!-- Seq_Id -->
+<td align="right">936,374</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">pseudogene&nbsp;(306/779&nbsp;nt)</td>
+<td align="center"><i>IT766_RS18265</i>&nbsp;&rarr;</td>
+<td align="left">heme ABC transporter ATP&#8209;binding protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_134.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_134.html">*</a></td>
+<td><a href="evidence/MC_PLOT_134.html">&divide;</a></td>
+<td>NZ_CP064350</td>
+<td align="right">78017&#8211;85540</td>
+<td align="right">89147&#8211;85630</td>
+<td align="right">91&#8211;11131</td>
+<td align="center">63&nbsp;[59]</td>
+<td align="center">[60]&nbsp;62</td>
+<td align="center"><i>IT766_RS00450&#8211;[IT766_RS00505]</i></td>
+<td align="left">IT766_RS00450,IT766_RS00455,IT766_RS00460,IT766_RS00465,rrf,IT766_RS00475,IT766_RS00480,IT766_RS00485,IT766_RS00490,IT766_RS00495,rrf,[IT766_RS00505]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_135.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_135.html">*</a></td>
+<td><a href="evidence/MC_PLOT_135.html">&divide;</a></td>
+<td>NZ_CP064350</td>
+<td align="right">1265676&#8211;1265783</td>
+<td align="right">1266689&#8211;1265785</td>
+<td align="right">3&#8211;1014</td>
+<td align="center">62&nbsp;[61]</td>
+<td align="center">[45]&nbsp;73</td>
+<td align="center"><i>IT766_RS05710</i></td>
+<td align="left">IS3&#8209;like element ISVch4 family transposase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_137.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_137.html">*</a></td>
+<td><a href="evidence/MC_PLOT_137.html">&divide;</a></td>
+<td>NZ_CP064350</td>
+<td align="right">3014865&#8211;3015050</td>
+<td align="right">3015051</td>
+<td align="right">2&#8211;187</td>
+<td align="center">62&nbsp;[60]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>fre/&#8211;</i></td>
+<td align="left">NAD(P)H&#8209;flavin reductase/&#8211;</td>
+</tr>
+</table>
+</body></html>

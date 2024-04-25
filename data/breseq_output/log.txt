@@ -1,0 +1,4 @@
+Fri Jan 26 01:24:56 2024
+
+breseq -r GCF_015482825.1.gb -j 16 -o 4564_variant_calling/breseq_4564_3 --consensus-minimum-variant-coverage-each-strand 3 4564_3_R1.paired.fastq 4564_3_R2.paired.fastq
+

@@ -16,4 +16,10 @@ unzip the gzipped FASTQ reads
 
     gzip -d reads.R1.fq.gz
 
+print Breseq help menu
 
+    breseq -h
+
+Run basic Breseq analysis
+
+    breseq -j 16 -r genome.gbk reads.R1.fq reads.R2.fq

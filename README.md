@@ -10,6 +10,32 @@ change directory to move into the **data** folder
     
     cd data/
 
+Make a copy of example.txt file
+
+    ls
+    cp example.txt example_copy.txt
+    ls
+
+Make a copy somewhere else and relative paths
+
+    ls data/
+    cp example.txt ../example_copy.txt
+    ls data/
+
+Make a new directory and move the file into it
+
+    mkdir new_dir
+    mv example.txt new_dir/
+    cd new_dir
+    ls
+    cd ../
+    ls
+
+Removing files and directories
+
+    rm new_dir/example.txt
+    rm -r new_dir
+
 unzip the gzipped FASTQ reads
 
     gzip -d reads.R1.fq.gz

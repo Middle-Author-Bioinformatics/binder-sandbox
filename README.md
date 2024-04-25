@@ -1,6 +1,12 @@
-## Jupyter Binder for SprayNPray tutorial
+## Jupyter Binder tutorial
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Arkadiy-Garber/binder-variant-calling/HEAD)
+
+### Bash tricks
+
+Print current working directory
+
+    pwd
 
 List the contents of the current working direcory
     
@@ -35,6 +41,13 @@ Removing files and directories
 
     rm new_dir/example.txt
     rm -r new_dir
+
+Terminal text editor
+
+    nano example.txt
+
+
+### Breseq
 
 unzip the gzipped FASTQ reads
 

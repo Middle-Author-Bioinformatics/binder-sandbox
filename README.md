@@ -46,6 +46,52 @@ Terminal text editor
 
     nano example.txt
 
+Redirects
+
+    ls -lht
+    ls -lht > file_contents.txt
+
+Wildcard
+
+    wc -l example.txt
+
+Pipes
+
+    ls | wc -l
+
+The asterisk
+
+    ls *txt
+
+History
+
+    history
+    history | tail
+    history | less
+    history | grep 'nano'
+
+The for-loop
+
+    for i in *; do
+        echo $i
+    done
+
+    for i in *; do echo $i; done
+
+Iterating over letters and numbers:
+
+    for i in {1..10}; do
+        echo $i
+    done
+
+    for number in {1..10}; do
+        echo sample-${number}.fa
+    done
+
+    for letter in {A..Z}; do
+        echo sample-${letter}.fa
+    done
+    
 
 ### Breseq
 

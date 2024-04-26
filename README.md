@@ -94,6 +94,12 @@ Iterating over letters and numbers:
     
 Basics with cut, paste, and grep
 
+    cut -f1 annotations.tsv > loci
+    cut -f4 annotations.tsv > genes
+
+    paste loci genes > loci_genes.tsv
+
+    grep 'atp' loci_genes.tsv > loci_genes_atp.tsv
     
 
 ### Breseq

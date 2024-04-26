@@ -92,6 +92,9 @@ Iterating over letters and numbers:
         echo sample-${letter}.fa
     done
     
+Basics with cut, paste, and grep
+
+    
 
 ### Breseq
 

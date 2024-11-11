@@ -1,6 +1,7 @@
 ## Jupyter Binder tutorial
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Arkadiy-Garber/binder-variant-calling/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Middle-Author-Bioinformatics/binder-sandbox/HEAD)
+
 
 ### Basic Commands
 List files in the current directory:

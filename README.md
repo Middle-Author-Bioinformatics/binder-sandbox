@@ -57,14 +57,6 @@ Identify the longest contig in the file:
 
     awk '/^>/ {if (seqlen > maxlen) {maxlen=seqlen; longest=seqname}; seqlen=0; seqname=$0} !/^>/ {seqlen += length($0)} END {if (seqlen > maxlen) longest=seqname; print longest}' assembly.fasta
 
-Calculate the GC content as a percentage:
-
-    grep -v "^>" assembly.fasta | tr -d "\n" | awk '{gc=gsub(/[GC]/, ""); total=length($0); print (gc/total)*100"%"}'
-
-Split each contig into a separate file:
-
-    awk '/^>/ {filename = substr($0, 2) ".fasta"; print $0 > filename; next} {print >> filename}' assembly.fasta
-
 Generate a list of contig headers sorted by sequence length:
 
     awk '/^>/ {if (seqlen) print seqlen, seqname; seqlen=0; seqname=$0} !/^>/ {seqlen += length($0)} END {print seqlen, seqname}' assembly.fasta | sort -nr
@@ -73,10 +65,14 @@ Extract sequences for a specific contig by its header (Replace contig_name with 
 
     awk '/^>contig_name/ {print; getline; while ($0 !~ /^>/) {print; getline}}' assembly.fasta
 
-
 Rename contigs to a simpler format (e.g., contig_1, contig_2):
 
     awk '/^>/ {print ">contig_" ++i; next} {print}' assembly.fasta > renamed_assembly.fasta
+
+Split each contig into a separate file:
+
+    awk '/^>/ {filename = substr($0, 2) ".fasta"; print $0 > filename; next} {print >> filename}' assembly.fasta
+
 
 Count occurrences of each nucleotide:
 
@@ -91,10 +87,6 @@ Count the Number of Gene Sequences
 Extract Gene Sequences by Header (Replace gene_name with the header of the desired gene.)
 
     awk '/^>gene_name/ {print; getline; while ($0 !~ /^>/) {print; getline}}' genes.ffn
-
-Calculate GC Content of Gene Sequences
-
-    grep -v "^>" genes.ffn | tr -d "\n" | awk '{gc=gsub(/[GC]/, ""); total=length($0); print (gc/total)*100"%"}'
 
 Filter Genes Longer than a Certain Length (Adjust 1000 to the desired length threshold.)
 
